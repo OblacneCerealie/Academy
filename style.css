@@ -1,0 +1,71 @@
+#container {
+    background: rgb(87, 18, 114);
+    margin: 30 px auto;
+    width: 2000px;
+    height: 1000px;
+}
+#menu {
+    background: rgb(53, 12, 63);
+    float: left;
+    width: 300px;
+    height: 1000px;
+}
+#backheel {
+    background: rgb(91, 11, 110);
+    float: right;
+    width:300px;
+    height: 1000px
+}
+#header {
+    background: rgb(225, 188, 233);
+    width: 2000px;
+    height: 300px;
+}
+#informations {
+    background: rgb(142, 117, 148);
+    width: 1700px;
+    height: 200px;
+}
+#h1{
+    color:black;
+}
+#moznosti{
+    background-color: black;
+    height: 50px;
+    width: 400px;
+    float: right;
+}
+#moznosti2{
+    background-color: rgb(58, 17, 17);
+    height: 50px;
+    width: 400px;
+    float: right;
+}
+#moznosti3{
+    background-color: rgb(77, 13, 13);
+    height: 50px;
+    width: 400px;
+    float: right;
+}
+#moznosti4{
+    background-color: rgb(156, 4, 4);
+    height: 50px;
+    width: 400px;
+    float: right;
+}
+#h2{
+    color: white;
+}
+#navbar {
+    margin: 10;
+    padding: 30;
+    list-style-type:none;
+}
+#navbar a:hover {
+    border-radius: 20px 5px;
+    background: blue;
+}
+#h4 {
+    color:white;
+
+}
