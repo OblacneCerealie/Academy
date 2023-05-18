@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Sablona pre blog</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div id="container">
@@ -37,6 +37,17 @@
             <textarea name="message" cols="60" rows="10"></textarea><br>
             <input type="submit" name="Tlacitdlo" value="">
         </form>
+    <button onclick="addTextNode('Áno!');">Áno!</button>
+    <button onclick="addTextNode('Nie!');">Nie!</button>
+    <button onclick="addTextNode('Možno');">Možno!</button>
+    <p id="p1">Text</p>
+
+    <form>
+        <p>a: <input id="a" type="number" value="0"></p>
+        <p>b: <input id="b" type="number" value="0"></p>
+        <p>a+b:<input id="c"></p>
+        <input type="button" value="Vypočítaj" onclick="onButton()"/>
+    </form>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1vxwWcskX6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     
     
