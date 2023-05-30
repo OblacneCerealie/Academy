@@ -26,15 +26,55 @@
 //var c = a+b
 //c1.innerHTML = c ;
 //}
+//function pause() {
+//    clearInterval (slideInterval);
+
+//}
+//pauseButton.addEventListener("click", pause);
 document.addEventListener("DOMContentLoaded", function() {
 var slides = document.querySelectorAll("#slides li")
 var currentSlide = 0;
 var slideInterval = setInterval (nextSlide, 2000);
+var isPaused = false;
+
 
 function nextSlide (){
+if (!isPaused){
     slides[currentSlide].className ="slide";
     currentSlide = (currentSlide+1)%slides.length;
-    slides [currentSlide].className = "showing";
+    slides [currentSlide].className = "showing";}
 
 }
+function plusOneSlide (){
+    slides[currentSlide].className ="slide";
+    currentSlide = (currentSlide+1)%slides.length;
+    slides [currentSlide].className = "showing";}
+
+function minusOneSlide (){
+    slides[currentSlide].className ="slide";
+    currentSlide = (currentSlide-1)%slides.length;
+    slides [currentSlide].className = "showing";}
+
+function fourthSlide (){
+    slides[currentSlide].className ="slide";
+    currentSlide = (currentSlide=4)%slides.length;
+    slides [currentSlide].className = "showing";}
+function mySlide (){
+    var userSlide = document.getElementById("a") 
+    slides[currentSlide].className ="slide";
+    currentSlide = userSlide
+    slides [currentSlide].className = "showing";}
+function pauseSlideshow (){
+    isPaused = !isPaused
+}
+var pauseButton = document.getElementById("pause");
+pauseButton.addEventListener("click", pauseSlideshow);
+var forwardButton = document.getElementById("forward");
+pauseButton.addEventListener("click", plusOneSlide);
+var backwardButton = document.getElementById("backward");
+pauseButton.addEventListener("click", minusOneSlide);
+var fourthButton = document.getElementById("fourth");
+pauseButton.addEventListener("click", fourthSlide);
+var myButton = document.getElementById("a");
+pauseButton.addEventListener("click", mySlide);
 });
