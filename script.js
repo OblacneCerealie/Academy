@@ -87,13 +87,14 @@ pauseButton.addEventListener("click", mySlide);
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var bulbes = document.querySelectorAll("#sliders li")
+    var bulbes = document.querySelectorAll("#sliders li");
     var currentBulb = 0;
 function zapnut () {
     bulbes[currentBulb].className ="nevidim";
     currentBulb = (currentBulb=1)%bulbes.length;
     bulbes [currentBulb].className = "vidim";}
-}
+
 
 var zapnutBulb = document.getElementById("Zapnut");
 zapnutBulb.addEventListener("click", zapnut);
+})
