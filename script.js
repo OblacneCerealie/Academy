@@ -37,7 +37,6 @@ var currentSlide = 0;
 var slideInterval = setInterval (nextSlide, 2000);
 var isPaused = false;
 
-
 function nextSlide (){
 if (!isPaused){
     slides[currentSlide].className ="slide";
@@ -78,3 +77,23 @@ pauseButton.addEventListener("click", fourthSlide);
 var myButton = document.getElementById("a");
 pauseButton.addEventListener("click", mySlide);
 });
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var bulbes = document.querySelectorAll("#sliders li")
+    var currentBulb = 0;
+function zapnut () {
+    bulbes[currentBulb].className ="nevidim";
+    currentBulb = (currentBulb=1)%bulbes.length;
+    bulbes [currentBulb].className = "vidim";}
+}
+
+var zapnutBulb = document.getElementById("Zapnut");
+zapnutBulb.addEventListener("click", zapnut);
