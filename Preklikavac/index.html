@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title> Interactive gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+    <script>
+$(document).ready(function() {
+    $(".thumbnail").click(function(){
+        var image = $(this).attr("src");
+        $("#mainImage").attr("src", image)
+
+    });
+}); 
+    </script>
+</head>
+<body>
+    <h1>Interactive gallery</h1>
+    <br>
+    <br>
+        <div id="container">
+            <div id="thumbnails"> <img src="Auto1.jpg" class="Auto">
+            <img src="Auto2.jpg" class="Auto">
+            <img src="Auto3.jpg" class="Auto">
+            <img src="Auto4.jpg" class="Auto"></div>
+     <br>
+        <div id="mainImageContainer">
+            <img src="Auto1.jpg" class="final_img" id="mainImage"></div>
+        </div>
+</body>
+</html>

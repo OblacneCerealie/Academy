@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+.Auto{
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+#thumbnails{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#final_img{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    align-items: center;
+}
+@media (max-width:600px){
+    #thumbnails{
+        flex-direction: column;
+    }
+}
