@@ -1,0 +1,50 @@
+button{
+    width: 50px;
+    height: 20px;
+    margin: 20px;
+    background-color: bisque;
+    border-color: black;
+
+}
+body{
+    background-color: gray;
+
+    
+}
+.hidden{
+display: none;
+
+}
+.showing{
+    visibility: visible !important;
+    flex: 6;
+    margin: none;
+}
+
+.slides{
+
+
+}
+.button_right{
+
+    flex: 2;
+}
+.button_play{
+
+    flex: 2;
+}
+
+.button_pause{
+
+    flex: 2;
+}
+
+.button_left{
+
+    flex: 2;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
